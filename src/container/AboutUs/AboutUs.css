@@ -60,6 +60,13 @@
   .app__aboutus-content_knife{
     margin: 4rem 0;
   }
+  .app__aboutus-content_knife img{
+    height: 800px;
+  }
+  .custom__button {
+    padding: 0.8rem 1.5rem;
+    font-size: 1rem;
+  }
 }
 
 
@@ -68,4 +75,12 @@
     width: 80%;
     height: 320px;
   }
+  .app__aboutus-content_knife img{
+    max-height: 70vh;
+  }
+  .app__aboutus-content_about p,
+  .app__aboutus-content_history p {
+    margin: 1.5rem 0; 
+  }
+  
 }

@@ -1,0 +1,112 @@
+.app__newsletter {
+  padding: 2rem 4rem;
+  border: 1px solid var(--color-golden);
+  background: var(--color-black);
+}
+.app__newsletter-heading{
+  text-align: center;
+}
+.app__newsletter-input{
+  flex-direction: row;
+  margin-top: 3rem;
+  
+}
+.app__newsletter-input input{
+  width: 100%;
+  border: 1px solid var(--color-golden);
+  border-radius: 5px;
+  font-size: 1rem;
+  font-family: var(--font-base);
+  color: var(--color-white);
+  margin-right: 2rem;
+  margin-bottom: 0.5rem;
+  padding: 0.75rem 1rem;
+  background: var(--color-black);
+}
+.app__newsletter-input input:focus{
+  outline: none;
+  box-shadow: 0 0 10px rgba(255, 215, 0, 0.5);
+  transition: box-shadow 0.3s ease-in-out;
+}
+.app__newsletter-input button{
+  width: max-content;
+}
+.active__button:active {
+  transform: scale(0.98);
+  background: var(--color-golden);
+  color: var(--color-black);
+}
+.active__button:hover {
+  box-shadow: 0px 4px 15px rgba(255, 215, 0, 0.3);
+}
+.app__newsletter-message{
+  margin-top: 1.5rem;
+  text-align: center;
+}
+.error-message{
+  color: red;
+  font-size: 0.9rem;
+  margin-top: 0.5rem;
+  opacity: 1;
+  animation: fadeIn 1s forwards;
+}
+.success-message{
+  color: var(--color-golden);
+  margin-top: 0.5rem;
+  opacity: 0;
+  animation: fadeIn 1s forwards;
+}
+@keyframes fadeIn {
+  to{
+    opacity: 1;
+  }
+}
+.close-icon{
+  font-size: 1.5rem;
+  margin-left: 1rem;
+  cursor: pointer;
+  color: var(--color-golden);
+  transition: transform 0,2s ease;
+}
+.close-icon:hover{
+  transform: scale(1.2);
+}
+
+
+
+@media screen and (min-width: 2000px) {
+  .app__newsletter-input input{
+    font-size: 2rem;
+  }
+}
+
+@media screen and (max-width: 990px) {
+  .app__newsletter-input{
+    flex-direction: column;
+    width: 100%;
+  }
+  .app__newsletter-input input{
+    margin: 0 0 2rem 0;
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .app__newsletter{
+    padding: 2rem 0;
+    border: none;
+  }
+  
+}
+
+@media screen and (max-width: 370px) {
+  .app__newsletter-heading h1{
+    font-size: 32px;
+    line-height: 50px;
+    
+  }
+  .app__newsletter-input input {
+    padding: 0.5rem;
+    font-size: 0.9rem;
+  }
+}

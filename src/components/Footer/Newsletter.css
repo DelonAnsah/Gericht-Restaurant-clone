@@ -96,6 +96,9 @@
     padding: 2rem 0;
     border: none;
   }
+  .app__newsletter-input input{
+    width: 80%;
+  }
   
 }
 

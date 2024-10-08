@@ -1,0 +1,10 @@
+.app__wrapper-content p{
+  margin-bottom: 1.5rem;
+}
+
+@media screen and (min-width: 1200px) {
+  .app__wrapper{
+    padding: 6rem 3rem;
+  }
+}
+

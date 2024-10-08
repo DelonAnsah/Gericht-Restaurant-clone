@@ -30,7 +30,7 @@ const Navbar = () => {
   return (
     <div className='app__navbar'>
       <div className="app__navbar-logo">
-        <img src={logo} alt="logo" />
+        <img src={logo} alt="logo" loading='lazy'/>
       </div>
       <ul className='app__navbar-links'>
         <List />

@@ -8,7 +8,7 @@ import sign from '../../assets/sign.png'
 const Chef = () => (
   <div className='app__bg app__wrapper section__padding'>
     <div className="app__wrapper_img app__wrapper_img-reverse" >
-    <img src={chef} alt="chef" />
+    <img src={chef} alt="chef" loading='lazy' />
     </div>
     <div className="app__wrapper_info">
       <SubHeading  title="Chef's Word"  />

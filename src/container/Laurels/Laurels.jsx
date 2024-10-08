@@ -25,7 +25,7 @@ const Laurels = () => (
       </div>
     </div>
     <div className="app__wrapper_img">
-      <img src={Laurel} alt="Laurels" />
+      <img src={Laurel} alt="Laurels" loading='lazy' />
     </div>
   </div>
 )

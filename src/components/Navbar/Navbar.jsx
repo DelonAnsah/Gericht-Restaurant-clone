@@ -4,22 +4,22 @@ import { GiHamburgerMenu } from 'react-icons/gi'
 import { MdOutlineRestaurantMenu } from 'react-icons/md'
 import logo from '../../assets/gericht.png'
 
-const List = () => (
+const List = ( { closeMenu }) => (
   <>
     <li className="p__opensans">
-      <a href="#home">Home</a>
+      <a href="#home" onClick={() => closeMenu()}>Home</a>
     </li>
     <li className="p__opensans">
-      <a href="#about">About</a>
+      <a href="#about" onClick={() => closeMenu()}>About</a>
     </li>
     <li className="p__opensans">
-      <a href="#menu">Menu</a>
+      <a href="#menu" onClick={() => closeMenu()}>Menu</a>
     </li>
     <li className="p__opensans">
-      <a href="#awards">Awards</a>
+      <a href="#awards" onClick={() => closeMenu()}>Awards</a>
     </li>
     <li className="p__opensans">
-      <a href="#contact">Contact</a>
+      <a href="#contact" onClick={() => closeMenu()}>Contact</a>
     </li>
   </>
 )
@@ -27,13 +27,17 @@ const List = () => (
 const Navbar = () => {
   const [toggleMenu, setToggleMenu] = useState(false);
 
+  const handleCloseMenu = () => {
+    setToggleMenu(false);
+  }
+
   return (
     <div className='app__navbar'>
       <div className="app__navbar-logo">
         <img src={logo} alt="logo" loading='lazy'/>
       </div>
       <ul className='app__navbar-links'>
-        <List />
+        <List closeMenu={() => {}} />
       </ul>
       <div className="app__navbar-login">
         <a href="#login" className="p__opensans">Log In / Register</a>
@@ -45,9 +49,9 @@ const Navbar = () => {
 
         {toggleMenu && (
            <div className="app__navbar-smallscreen_overlay flex__center slide-bottom">
-           <MdOutlineRestaurantMenu fontSize={27} className='overlay__close' onClick={() => setToggleMenu(false)} />
+           <MdOutlineRestaurantMenu fontSize={27} className='overlay__close' onClick={handleCloseMenu} />
            <ul className="app__navbar-smallscreen_links">
-             <List />
+             <List closeMenu={handleCloseMenu} />
            </ul>
          </div>
         )}

@@ -23,9 +23,9 @@ const Footer = () => (
         <p className="p__opensans">"The best way to find yourself is to lose yourself in the service of others.”</p>
         <img src={spoon} alt="spoon" className='spoon__img' style={{ marginTop: '15'}}/>
         <div className="app__footer-links_icons">
+          <a href="http://www.facebook.com/DelonAnsah" target="_blank" rel="noopener noreferrer" aria-label='X'><FiFacebook /></a>
           <a href="http://www.x.com/ansahDelon" target="_blank" rel="noopener noreferrer" aria-label='X'><BsTwitterX /></a>
           <a href="http://www.instagram.com/delon_ansah" target="_blank" rel="noopener noreferrer" aria-label='instagram'><FiInstagram /></a>
-          <a href="#" aria-label="Gmail"><FiFacebook /></a>
         </div>
       </div>
       <div className="app__footer-links_works">

@@ -6,11 +6,21 @@ import logo from '../../assets/gericht.png'
 import spoon from '../../assets/spoon.png'
 import { FiFacebook, FiInstagram } from 'react-icons/fi'
 import { BsTwitterX } from 'react-icons/bs'
+import { FiHome } from 'react-icons/fi'
 
-const Footer = () => (
-  <div className='app__footer section__padding'>
+
+const Footer = () => {
+ 
+
+  return(
+
+  <div className='app__footer section__padding' id='last'>
     <FooterOverlay />
     <Newsletter />
+    <div className='top-link'>
+      <div  className='top-link-div'/>
+      <a href="#home" aria-label='home'>TOP</a>
+    </div>
     <div className="app__footer-links">
       <div className="app__footer-links_contact">
         <h1 className="app__footer-headtext">Contact Us</h1>
@@ -41,5 +51,6 @@ const Footer = () => (
     </div>
   </div>
 )
+}
 
 export default Footer

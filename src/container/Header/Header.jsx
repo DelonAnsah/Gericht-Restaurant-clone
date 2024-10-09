@@ -14,6 +14,10 @@ const Header = () => (
    <div className="app__wrapper_img">
     <img src={headerImage} alt="header image" loading='lazy'/>
    </div>
+   <div className='last-link'>
+      <div  className='last-link-div'/>
+      <a href="#last" aria-label='Footer'>SCROLL</a>
+    </div>
   </div>
 )
 

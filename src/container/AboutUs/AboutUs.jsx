@@ -5,7 +5,7 @@ import aboutSpoon from '../../assets/spoon.png'
 import knife from '../../assets/knife.png'
 
 const AboutUs = () => (
-  <div className='app__aboutus app__bg flex__center section__padding'>
+  <div className='app__aboutus app__bg flex__center section__padding' id='about'>
    <div className="app__aboutus-overlay flex__center">
     <img src={ GImage } alt="G letter"  loading='lazy'/>
    </div>
